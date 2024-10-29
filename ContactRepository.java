@@ -11,4 +11,5 @@ public interface ContactRepository extends MongoRepository<Contact, String> {
     // Custom query methods
     List<Contact> findByFirstName(String firstName);
     List<Contact> findByEmail(String email);
+    List<Contact> findByPhone(String Phone);
 }
